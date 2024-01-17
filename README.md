@@ -31,7 +31,7 @@ hosts = {
 ```
 Serão criadas 3 Vms com as seguintes configurações:
 
-- Master: Ubuntu 20.04, 2gb, 2CPU (Recomendacao para node master do k8s)
+- Master: Ubuntu 20.04, 2gb, 2CPU (Recomendação min para node master do k8s)
 - Node1: Ubuntu 20.04, 1gb, 1CPU
 - Node2: Ubuntu 20.04, 1gb, 1CPU
   
