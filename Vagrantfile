@@ -1,10 +1,9 @@
-REDE="192.168.0."  #Rede Local
-INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede para criar a bridge
+$INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede
 
 hosts = {
-  "master" => {"memory" => "2048", "cpu" => "2", "ip" => "50", "image" => "ubuntu/focal64" },
-  "node1" => {"memory" => "1024", "cpu" => "1", "ip" => "51", "image" => "ubuntu/focal64" },
-  "node2" => {"memory" => "1024", "cpu" => "1", "ip" => "52", "image" => "ubuntu/focal64" }
+  "master" => {"memory" => "2048", "cpu" => "2", "ip" => "192.168.0.50", "image" => "ubuntu/focal64" },
+  "node1" => {"memory" => "1024", "cpu" => "1", "ip" => "192.168.0.51", "image" => "ubuntu/focal64" },
+  "node2" => {"memory" => "1024", "cpu" => "1", "ip" => "192.168.0.52", "image" => "ubuntu/focal64" }
 }
 Vagrant.configure("2") do |config|
 
@@ -12,7 +11,7 @@ Vagrant.configure("2") do |config|
    config.vm.define "#{name}" do |host|
      host.vm.box = "#{conf["image"]}"
      host.vm.hostname = "#{name}"
-     host.vm.network "public_network", ip: "$REDE#{conf["ip"]}", bridge: "$INTERFACE"
+     host.vm.network "public_network", ip: "#{conf["ip"]}", bridge: $INTERFACE
 	     host.vm.provider "virtualbox" do |vb|
          vb.name = "#{name}"
          vb.memory = conf["memory"]

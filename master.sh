@@ -2,7 +2,7 @@
 
 user=vagrant
 IP=$(ip a | grep 192. | awk '{print $2}' | awk -F"/" '{print $1}')
-sudo kubeadm init --apiserver-advertise-address=$IP
+sudo kubeadm init --apiserver-advertise-address=$IP --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem
 
 mkdir -p /home/$user/.kube
 yes | sudo cp -rf /etc/kubernetes/admin.conf /home/$user/.kube/config
