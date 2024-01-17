@@ -55,6 +55,13 @@ kubectl get nodes
 ```
 ![Vagrant](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/af8a01d4-a69f-4236-8423-26eef3eae534)
 
+### Remover tudo
+```
+vagrant destroy
+```
+![image](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/dcfddf67-925c-402c-8cf8-1e3677ef3b3c)
+
+
 # Referências
 
 - [Vagrant Documentation](https://developer.hashicorp.com/vagrant/docs)
