@@ -37,7 +37,7 @@ Serão criadas 3 Vms com as seguintes configurações:
 ```
 vagrant up
 ```
-![Vagrant](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/08d5e769-5c35-4708-b8ee-e962252e21b6)
+![Vagrant2](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/bfdd4874-fed3-41b4-bfcd-b2a90be4c3d5)
 Aguarde finalizar o processo
 
 ## VirtualBox após o vagrant finalizar
