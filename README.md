@@ -14,17 +14,17 @@ https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
 
 ## Faça o download ou clone o repositorio
 1. Acesse a pasta vagrant-lab-k8s   
-- **IMPORTANTE:** As variaveis **REDE** e **INTERFACE** devem ser alteradas no arquivo: **Vagrantfile**
+- **IMPORTANTE:** Alterar a variavel **INTERFACE** no arquivo: **Vagrantfile**
 ```
 $INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede local
-$REDE="192.168.0"  #Rede Local
+
 ```
-- Definições das Vms que serão criadas (Atenção: Verificar se os Ips não estão em uso em sua rede)
+- Definições das Vms que serão criadas (Atenção: Alterar os ips, para adequar a sua rede)
 ```
 hosts = {
-  "master" => {"memory" => "2048", "cpu" => "2", "ip" => "50", "image" => "ubuntu/focal64" },
-  "node1" => {"memory" => "1024", "cpu" => "1", "ip" => "51", "image" => "ubuntu/focal64" },
-  "node2" => {"memory" => "1024", "cpu" => "1", "ip" => "52", "image" => "ubuntu/focal64" }
+  "master" => {"memory" => "2048", "cpu" => "2", "ip" => "192.168.0.50", "image" => "ubuntu/focal64" },
+  "node1" => {"memory" => "1024", "cpu" => "1", "ip" => "192.168.0.51", "image" => "ubuntu/focal64" },
+  "node2" => {"memory" => "1024", "cpu" => "1", "ip" => "192.168.0.52", "image" => "ubuntu/focal64" }
 }
 ```
 Serão criadas 3 Vms com as seguintes configurações:
