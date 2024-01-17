@@ -15,12 +15,12 @@ https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
 ## Faça o download ou clone o repositorio
 1. Acesse a pasta vagrant-lab-k8s   
 - **IMPORTANTE:** Editar o arquivo: **Vagrantfile**
-- Alterar a variavel **INTERFACE** para o nome da sua interface
+  Alterar a variavel **INTERFACE** para o nome da sua interface
 ```
 $INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede local
 
 ```
-- Definições das Vms que serão criadas (Atenção: Alterar os ips, para adequar a sua rede)
+- Definições das Vms que serão criadas ( **Atenção: Alterar os ips, para adequar a sua rede**)
 ```
 hosts = {
   "master" => {"memory" => "2048", "cpu" => "2", "ip" => "192.168.0.50", "image" => "ubuntu/focal64" },
