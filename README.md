@@ -16,8 +16,8 @@ https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
 1. Acesse a pasta vagrant-lab-k8s   
 - **IMPORTANTE:** As variaveis **REDE** e **INTERFACE** devem ser alteradas no arquivo: **Vagrantfile**
 ```
-REDE="192.168.0."  #Rede Local
-INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede para criar a bridge
+$INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede local
+$REDE="192.168.0"  #Rede Local
 ```
 - Definições das Vms que serão criadas (Atenção: Verificar se os Ips não estão em uso em sua rede)
 ```
@@ -32,6 +32,7 @@ Serão criadas 3 Vms com as seguintes configurações:
 - Master: Ubuntu 20.04, 2gb, 2CPU (Recomendacao para node master do k8s)
 - Node1: Ubuntu 20.04, 1gb, 1CPU
 - Node2: Ubuntu 20.04, 1gb, 1CPU
+Todas as Vms estaram na rede local, modo bridge, sendo acessivel pela rede.
 
 ### Iniciando o vagrant
 ```
