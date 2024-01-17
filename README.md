@@ -14,7 +14,8 @@ https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
 
 ## Faça o download ou clone o repositorio
 1. Acesse a pasta vagrant-lab-k8s   
-- **IMPORTANTE:** Alterar a variavel **INTERFACE** no arquivo: **Vagrantfile**
+- **IMPORTANTE:** Editar o arquivo: **Vagrantfile**
+- Alterar a variavel **INTERFACE** para o nome da sua interface
 ```
 $INTERFACE="Intel(R) I211 Gigabit Network Connection" #Nome da interface de rede local
 
