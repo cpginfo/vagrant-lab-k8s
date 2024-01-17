@@ -55,6 +55,14 @@ kubectl get nodes
 ```
 ![Vagrant](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/af8a01d4-a69f-4236-8423-26eef3eae534)
 
+### Supender as Vm's
+```
+vagrant suspend
+```
+![image](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/3546f093-7b6a-4721-9d0f-07cac194391e)
+
+![image](https://github.com/cpginfo/vagrant-lab-k8s/assets/39770143/c1af060d-06e1-4db3-8d20-469e4b590f09)
+
 ### Remover tudo
 ```
 vagrant destroy
